@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'softblue': '#8bacda',
+            'cyan' : '#00fff7',
+            'mainbg' : '#0d192b',
+            'cardbg' : '#14253d',
+            'line' : '#2f415b',
+            'white' : '	#ffffff'
+          },
+          fontFamily: {
+            'outfit' : ['Outfit', 'sans-serif']
+          },
+          
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 15px; color: white; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-mainbg">
+
+  <div class="mx-auto h-auto w-[375px] p-5 bg-cardbg rounded-xl my-5 overflow-hidden">
+
+    <div class="rounded-xl mx-auto w-[335px] h-[335px] overflow-hidden bg-cover bg-[url('./images/image-equilibrium.jpg')] hover:bg-cyan hover:bg-blend-overlay hover:bg-opacity-70">
+      <div class="h-[48px] w-[48px] my-[140px] mx-auto hover:bg-[url('./images/icon-view.svg')]"></div>
+    </div>
+    <h1 class="text-white font-outfit font-semibold mt-4 text-xl hover:text-cyan">Equilibrium #3429</h1>
+    <p class="text-softblue font-outfit mt-4 text-softblue text-[18px]">Our Equilibrium collection promotes 
+    balance and calm.</p>
+    
+    <div class="flex justify-between">
+      <div class="flex">
+        <img src="./images/icon-ethereum.svg" alt="eth" class="mt-4 object-cover">
+        <div class="text-cyan font-outfit font-semibold text-sm mt-4 ml-2">0.041999 ETH</div>
+      </div>
+      <div class="flex items-center">
+        <img src="./images/icon-clock.svg" alt="jam" class="mt-4 object-cover">
+        <div class="w-[75px] text-softblue font-outfit font-normal text-[11px]  mt-4 ml-3">180 days left</div>
+      </div>
+    </div>
+
+  <div class="border border-softblue opacity-25 mt-4">
+
+  </div>
+  <div class="flex items-center">
+    <img src="./images/image-avatar.png" alt="avatar" class="mt-5 w-8 border-2 object-cover rounded-full">
+    <div class="mt-5 text-softblue font-outfit font-normal ml-3">Creation of <span class="text-white hover:text-cyan">Jules Wyvern</span></div>
+  </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">M.Danang Asyhari</a>.
+  </div>
+</body>
+</html>
